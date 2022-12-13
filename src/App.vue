@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <marquee-slider speed="10000" id="one" :item-width="250" :space="250">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <img alt="Vue logo" src="./assets/logo.png">
+    </marquee-slider>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MarqueeSlider from './components/MarqueeSlider.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MarqueeSlider
   }
 }
 </script>

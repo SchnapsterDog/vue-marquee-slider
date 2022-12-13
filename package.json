@@ -1,12 +1,37 @@
 {
-  "name": "vue2-marquee-slider",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-marquee-slider",
+  "description": "Simple and easy-to-use component for Vue that allows you to create customizable marquees with just a few lines of code",
+  "version": "1.0.0",
+  "private": false,
+  "author": {
+    "name": "Oliver Trajceski",
+    "email": "oliver@akrinum.com"
+  },
+  "repository": "https://github.com/SchnapsterDog/vue-marquee-slider",
+  "bugs": "https://github.com/SchnapsterDog/vue-marquee-slider/issues",
+  "keywords": [
+    "marquee",
+    "slider",
+    "vue",
+    "vue2",
+    "vue.js",
+    "nuxt",
+    "nuxt.js",
+    "marquee-slider",
+    "vue-marquee-slider",
+    "vue2-marquee-slider"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name vue2-marquee-slider ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "main": ".dist/vue-marquee-slider",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
