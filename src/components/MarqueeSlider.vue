@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-	name: 'VueMarqueeSlider',
+	name: 'MarqueeSlider',
 	props: {
 		autoWidth: {
 			type: Boolean,
@@ -16,16 +16,10 @@ export default {
 			}
 		},
 		id: {
-			type: [Number, String],
+			type: String,
       required: true,
       default: () => {
-        return 'id'
-      }
-    },
-    itemWidth: {
-			type: Number,
-			default: () => {
-				return 200
+				return 'id'
 			}
 		},
 		paused: {
@@ -53,9 +47,15 @@ export default {
 			}
 		},
 		speed: {
-			type: [Number, String],
+			type: Number,
 			default: () => {
 				return 1500
+			}
+		},
+		width: {
+			type: Number,
+			default: () => {
+				return 100
 			}
 		}
 	},
@@ -121,7 +121,7 @@ export default {
 			this.items[index].style.marginRight = `${this.space}px`
 		},
 		setItemWidth(index) {
-			this.items[index].style.minWidth = `${this.itemWidth}px`
+			this.items[index].style.minWidth = `${this.width}px`
 		},
 		setImageObjectFit(index) {
 			this.items[index].style.objectFit = 'contain'
@@ -133,13 +133,13 @@ export default {
 			if (this.autoWidth) {
 				this.container.style.width = `${this.itemsLength * (this.containerWidth / this.itemsLength + this.space)}px`
 			} else {
-				this.container.style.width = `${this.itemsLength * (this.itemWidth + this.space)}px`
+				this.container.style.width = `${this.itemsLength * (this.width + this.space)}px`
 			}
 		}
 	}
 }
 </script>
-<style module scoped>
+<style module>
 .marqueeSlider {
 	overflow: hidden;
 }
