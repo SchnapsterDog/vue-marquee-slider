@@ -53,7 +53,7 @@ The component allows you to create a responsive, customizable, mobile-friendly c
 With vue-marquee-slider, you can easily create scrolling text or images that automatically move across the screen.
 You can control the speed, direction, and even pause or resume the marquee with simple props.
 
-### 👉 Installation and Global Usage Vue2
+### Installation and Global Usage Vue2
 
 To use vue-marquee-slider in your Vue project, simply install it with npm or yarn:
 * npm
@@ -83,10 +83,10 @@ Once you have registered the component, you can use it in any of your Vue templa
   :width="50"
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -122,7 +122,7 @@ export default {
 }
 ```
 
-### 👉 Component Usage
+### Component Usage
 
 Sometimes you will want to import the component separately in each individual component.
 
@@ -135,10 +135,10 @@ This allows you to have more control over the component and tailor it specifical
   :width="50"
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -151,18 +151,18 @@ export default {
 }
 ```
 
-### 👉 Available props
+### Available props
 
 | Name | Type | Default | Description |
 |--|--|--|--|
 |**autoWidth**|`Boolean`|`false`|The prop autoWidth of the vue-marquee-slider component allows the width of each item in the slider to be automatically calculated based on the content of the item. This can be useful in cases where the items in the slider have varying lengths of text or other content, and you want to ensure that each item is displayed properly without being truncated or overlapping with other items. By setting this prop to true, the vue-marquee-slider component will automatically adjust the width of each item to fit its content, ensuring that the items are displayed properly and are easy to read.
-|**id**|`String`|`marquee-slider`|The prop id is required in the vue-marquee-slider component in order to uniquely identify the element on the page. This is necessary for proper functioning of the component, as it allows for proper event handling and state management.
+|**id**|`String`|`id`|The prop id is required in the vue-marquee-slider component in order to uniquely identify the element on the page. This is necessary for proper functioning of the component, as it allows for proper event handling and state management.
 |**paused**|`Boolean`|`false`|The paused prop is a boolean value that determines whether or not the marquee slider is paused. If paused is set to true, the marquee will not animate and will remain stationary. If paused is set to false, the marquee will animate according to the specified settings.
 |**repeat**|`Number`|`10`|The repeat prop is used to specify the number of times the marquee items should repeat before stopping. This prop can take an integer value.
 |**reverse**|`Boolean`|`false`|The reverse prop in vue-marquee-slider is used to determine whether the marquee should move in a reverse direction. This can be useful for creating a backwards scrolling effect or for reversing the direction of the marquee when the user navigates to a different section of the website. This prop can be set to either true or false depending on the desired behavior of the marquee.
 |**space**|`Number`|`200`|To add space between items in a vue-marquee-slider, you can use the space prop. The space prop allows you to specify the amount of space in pixels between each item in the slider.
 |**speed**|`Number`|`1500`|The speed prop in vue-marquee-slider allows users to set the speed at which the content in the slider will move. This can be set in miliseconds, allowing for precise control over the speed. The default value is 1500 ms, but this can be increased or decreased as needed.
-|**width**|`Number`|`200`|The width prop of each item in the vue-marquee-slider determines the width of the individual items within the slider. This prop can be useful for creating a consistent look and feel for the items in the slider, and for ensuring that they all fit within the designated space of the slider.
+|**width**|`Number`|`100`|The width prop of each item in the vue-marquee-slider determines the width of the individual items within the slider. This prop can be useful for creating a consistent look and feel for the items in the slider, and for ensuring that they all fit within the designated space of the slider.
 
 
 ## Examples
@@ -179,10 +179,10 @@ These examples can help you understand the different features and options availa
   :speed="15000"
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -195,10 +195,10 @@ These examples can help you understand the different features and options availa
   :width="50"
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -212,10 +212,10 @@ These examples can help you understand the different features and options availa
   :width="150"
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -261,10 +261,10 @@ These examples can help you understand the different features and options availa
   reverse
 >
   <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
-	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
-	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
-	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
-	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
+  <img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+  <img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+  <img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+  <img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -309,7 +309,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
 [contributors-url]: https://github.com/schnapsterdog/vue-marquee-slider/graphs/contributors
-[downloads-shield]: https://img.shields.io/github/downloads/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
+[downloads-shield]: https://img.shields.io/npm/dw/vue-marquee-slider.svg?style=for-the-badge
 [downloads-url]: https://www.npmjs.com/package/vue-marquee-slider
 [stars-shield]: https://img.shields.io/github/stars/vue-marquee-slider.svg?style=for-the-badge
 [stars-url]: https://github.com/schnapsterdog/vue-marquee-slider/stargazers
