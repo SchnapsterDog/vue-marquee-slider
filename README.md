@@ -1,5 +1,3 @@
-<a name="readme-top"></a>
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Downloads][downloads-shield]][downloads-url]
 [![Issues][issues-shield]][issues-url]
@@ -9,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/SchnapsterDog/vue-marquee-slider">
+  <a href="https://vue-marquee.com" target="_blank">
     <img src="images/logo.png" alt="Logo" width="233" height="93">
   </a>
 
@@ -18,46 +16,17 @@
   <p align="center">
     Simple and easy-to-use component for Vue that allows you to create customizable marquees with just a few lines of code
     <br />
-    <a href="https://vue-marquee.com/">View Demo</a>
+    <br />
+    <a href="https://vue-marquee.com/" target="_blank"><strong>View Demo</strong></a>
     <br />
     <br />
-    <a href="https://vue-marquee.com/guide"><strong>Explore the docs »</strong></a>
+    <a href="https://vue-marquee.com/guide" target="_blank"><strong>Explore the docs »</strong></a>
     ·
-    <a href="https://github.com/SchnapsterDog/vue-marquee-slider/issues">Report Bug</a>
+    <a href="https://github.com/schnapsterdog/vue-marquee-slider/issues target="_blank"">Report Bug</a>
     ·
-    <a href="https://github.com/SchnapsterDog/vue-marquee-slider/issues">Request Feature</a>
+    <a href="https://github.com/schnapsterdog/vue-marquee-slider/issues target="_blank"">Request Feature</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Vue Marquee Slider
@@ -84,7 +53,7 @@ The component allows you to create a responsive, customizable, mobile-friendly c
 With vue-marquee-slider, you can easily create scrolling text or images that automatically move across the screen.
 You can control the speed, direction, and even pause or resume the marquee with simple props.
 
-### Installation and Global Usage Vue2
+### 👉 Installation and Global Usage Vue2
 
 To use vue-marquee-slider in your Vue project, simply install it with npm or yarn:
 * npm
@@ -92,10 +61,11 @@ To use vue-marquee-slider in your Vue project, simply install it with npm or yar
   npm i vue-marquee-slider@latest
   ```
 
-  * yarn
+* yarn
   ```sh
   yarn add vue-marquee-slider@latest
   ```
+
 In order to register a component globally, you would typically need to import the component in your main application file. This would allow you to use the component in any of your Vue templates, without having to import it separately in each individual component.
 
 ```js
@@ -112,11 +82,11 @@ Once you have registered the component, you can use it in any of your Vue templa
   :speed="1000"
   :width="50"
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -141,18 +111,18 @@ export default {
   data() {
     return {
       images: [
-        { url: 'https://shorturl.at/d0459' },
-        { url: 'https://shorturl.at/eQXZ5' },
-        { url: 'https://shorturl.at/lqrW2' },
-        { url: 'https://shorturl.at/ghkoX' },
-        { url: 'https://shorturl.at/oqSZ8' }
+        { url: 'https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png' },
+        { url: 'https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png' },
+        { url: 'https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png' },
+        { url: 'https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png' },
+        { url: 'https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png' }
       ]
     }
   }
 }
 ```
 
-### Component Usage
+### 👉 Component Usage
 
 Sometimes you will want to import the component separately in each individual component.
 
@@ -164,11 +134,11 @@ This allows you to have more control over the component and tailor it specifical
   :speed="1000"
   :width="50"
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -181,7 +151,7 @@ export default {
 }
 ```
 
-### Available props
+### 👉 Available props
 
 | Name | Type | Default | Description |
 |--|--|--|--|
@@ -201,22 +171,22 @@ Visit the following <a href="https://vue-marquee.com/examples">link</a>. There y
 
 These examples can help you understand the different features and options available with the vue-marquee-slider component, and how you can use them to create your own custom marquee sliders.
 
-### Basic sample with images
+### 👉 Basic sample with images
 
 ```html
 <marquee-slider
   id="marquee-slider"
   :speed="15000"
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
-### With static width of the images
+### 👉 With static width of the images
 
 ```html
 <marquee-slider
@@ -224,15 +194,15 @@ These examples can help you understand the different features and options availa
   :speed="10000"
   :width="50"
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
-### Speed & Space between items
+### 👉 Speed & Space between items
 
 ```html
 <marquee-slider
@@ -241,15 +211,15 @@ These examples can help you understand the different features and options availa
   :speed="10000"
   :width="150"
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
-### Basic usage with text
+### 👉 Basic usage with text
 
 ```html
 <marquee-slider
@@ -265,7 +235,7 @@ These examples can help you understand the different features and options availa
 </marquee-slider>
 ```
 
-### Cards inside marquee-slider
+### 👉 Cards inside marquee-slider
 
 ```html
 <marquee-slider
@@ -280,7 +250,7 @@ These examples can help you understand the different features and options availa
 </marquee-slider>
 ```
 
-### Reversed direction
+### 👉 Reversed direction
 
 ```html
 <marquee-slider
@@ -290,11 +260,11 @@ These examples can help you understand the different features and options availa
   :width="150"
   reverse
 >
-  <img src="https://shorturl.at/d0459" />
-  <img src="https://shorturl.at/eQXZ5" />
-  <img src="https://shorturl.at/lqrW2" />
-  <img src="https://shorturl.at/ghkoX" />
-  <img src="https://shorturl.at/oqSZ8" />
+  <img src="https://app.imgforce.com/images/user/zrC_1622176244_logo-black-120.png" />
+	<img src="https://app.imgforce.com/images/user/O1j_1670884991_js-logo.png" />
+	<img src="https://app.imgforce.com/images/user/Igx_1670885749_vue-logo.png" />
+	<img src="https://app.imgforce.com/images/user/TPs_1670885858_react-logo.png" />
+	<img src="https://app.imgforce.com/images/user/jY4_1670885309_angular-logo.png" />
 </marquee-slider>
 ```
 
@@ -323,7 +293,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Oliver Trajceski - [LinkedIn](https://mk.linkedin.com/in/oliver-trajceski-8a28b070) - oliver@akrinum.com
 
-Project Link: [https://github.com/SchnapsterDog/vue-marquee-slider](https://github.com/SchnapsterDog/vue-marquee-slider)
+Project Link: [https://github.com/schnapsterdog/vue-marquee-slider](https://github.com/schnapsterdog/vue-marquee-slider)
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -337,16 +307,16 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/SchnapsterDog/vue-marquee-slider.svg?style=for-the-badge
-[contributors-url]: https://github.com/SchnapsterDog/vue-marquee-slider/graphs/contributors
-[downloads-shield]: https://img.shields.io/npm/dw/vue-marquee-slider?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
+[contributors-url]: https://github.com/schnapsterdog/vue-marquee-slider/graphs/contributors
+[downloads-shield]: https://img.shields.io/github/downloads/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
 [downloads-url]: https://www.npmjs.com/package/vue-marquee-slider
 [stars-shield]: https://img.shields.io/github/stars/vue-marquee-slider.svg?style=for-the-badge
-[stars-url]: https://github.com/SchnapsterDog/vue-marquee-slider/stargazers
-[issues-shield]: https://img.shields.io/github/issues/SchnapsterDog/vue-marquee-slider.svg?style=for-the-badge
-[issues-url]: https://github.com/SchnapsterDog/vue-marquee-slider/issues
-[license-shield]: https://img.shields.io/github/license/SchnapsterDog/vue-marquee-slider.svg?style=for-the-badge
-[license-url]: https://github.com/SchnapsterDog/vue-marquee-slider/blob/master/LICENSE.txt
+[stars-url]: https://github.com/schnapsterdog/vue-marquee-slider/stargazers
+[issues-shield]: https://img.shields.io/github/issues/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
+[issues-url]: https://github.com/schnapsterdog/vue-marquee-slider/issues
+[license-shield]: https://img.shields.io/github/license/schnapsterdog/vue-marquee-slider.svg?style=for-the-badge
+[license-url]: https://github.com/schnapsterdog/vue-marquee-slider/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://mk.linkedin.com/in/oliver-trajceski-8a28b070
 [product-screenshot]: https://app.imgforce.com/images/user/RdQ_1670897377_vue-marquee-seo.png
