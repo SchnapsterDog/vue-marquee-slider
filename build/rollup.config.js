@@ -7,20 +7,20 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
+import {terser} from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
 // Get browserslist config and remove ie from es build targets
-const esbrowserslist = fs.readFileSync('./.browserslistrc')
+const esbrowserslist=fs.readFileSync('./.browserslistrc')
   .toString()
   .split('\n')
-  .filter((entry) => entry && entry.substring(0, 2) !== 'ie');
+  .filter((entry) => entry&&entry.substring(0, 2)!=='ie');
 
-const argv = minimist(process.argv.slice(2));
+const argv=minimist(process.argv.slice(2));
 
-const projectRoot = path.resolve(__dirname, '..');
+const projectRoot=path.resolve(__dirname, '..');
 
-const baseConfig = {
+const baseConfig={
   input: 'src/entry.js',
   plugins: {
     preVue: [
@@ -57,7 +57,7 @@ const baseConfig = {
 
 // ESM/UMD/IIFE shared settings: externals
 // Refer to https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency
-const external = [
+const external=[
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
   'vue',
@@ -65,16 +65,16 @@ const external = [
 
 // UMD/IIFE shared settings: output.globals
 // Refer to https://rollupjs.org/guide/en#output-globals for details
-const globals = {
+const globals={
   // Provide global variable names to replace your external imports
   // eg. jquery: '$'
   vue: 'Vue',
 };
 
 // Customize configs for individual targets
-const buildFormats = [];
-if (!argv.format || argv.format === 'es') {
-  const esConfig = {
+const buildFormats=[];
+if(!argv.format||argv.format==='es') {
+  const esConfig={
     ...baseConfig,
     input: 'src/entry.esm.js',
     external,
@@ -105,8 +105,8 @@ if (!argv.format || argv.format === 'es') {
   buildFormats.push(esConfig);
 }
 
-if (!argv.format || argv.format === 'cjs') {
-  const umdConfig = {
+if(!argv.format||argv.format==='cjs') {
+  const umdConfig={
     ...baseConfig,
     external,
     output: {
@@ -135,8 +135,8 @@ if (!argv.format || argv.format === 'cjs') {
   buildFormats.push(umdConfig);
 }
 
-if (!argv.format || argv.format === 'iife') {
-  const unpkgConfig = {
+if(!argv.format||argv.format==='iife') {
+  const unpkgConfig={
     ...baseConfig,
     external,
     output: {

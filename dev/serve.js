@@ -5,7 +5,7 @@ import Dev from './serve.vue';
 import VueMarqueeSlider from '@/entry.esm';
 Vue.use(VueMarqueeSlider);
 
-Vue.config.productionTip = false;
+Vue.config.productionTip=false;
 
 new Vue({
   render: (h) => h(Dev),

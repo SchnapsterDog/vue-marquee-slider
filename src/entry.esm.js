@@ -3,7 +3,7 @@
 import * as components from '@/components/index';
 
 // install function executed by Vue.use()
-const install = function installVueMarqueeSlider(Vue) {
+const install= function installVueMarqueeSlider(Vue) {
   Object.entries(components).forEach(([componentName, component]) => {
     Vue.component(componentName, component);
   });
