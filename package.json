@@ -1,7 +1,7 @@
 {
   "name": "vue-marquee-slider",
   "description": "Simple and easy-to-use component for Vue that allows you to create customizable marquees with just a few lines of code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "author": {
     "name": "Oliver Trajceski",
@@ -28,7 +28,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library": "vue-cli-service build --target lib --name vue2-marquee-slider ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name vue-marquee-slider ./src/install.js",
     "lint": "vue-cli-service lint"
   },
   "main": ".dist/vue-marquee-slider",
