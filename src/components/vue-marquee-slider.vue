@@ -146,7 +146,7 @@ export default {
   },
 };
 </script>
-<style module>
+<style lang="css" module>
 .marqueeSlider {
   overflow: hidden;
 }
